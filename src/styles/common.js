@@ -4,9 +4,8 @@ export const GSCommon = css`
     * {
         box-sizing: border-box;
         color:#333;
-       
     }
-    hmtl {
-        background-color: #BBD2BD;
+    html {
+        background-color: #bbd2bd;
     }
 `;
