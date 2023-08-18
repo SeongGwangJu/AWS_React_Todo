@@ -3,7 +3,7 @@ import './App.css';
 import MainLayout from './components/MainLayout/MainLayout';
 import Reset from 'reset';
 import { Global } from '@emotion/react';
-import * as S from "./styles/common";
+ import * as S from "./styles/common/common";
 function App() {
   return (
     <>
