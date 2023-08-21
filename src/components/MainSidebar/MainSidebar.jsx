@@ -76,7 +76,7 @@ function MainSidebar(props) {
     });
     return(
         <div css={S.SLayout(isSidebarShow)}>
-            {/* menuToggleOnClick이랑 handle이랑 연결 */}
+            {/* menuToggleOnClick이랑 handle이랑 연결되었었음 */}
             <Header />
             {isSidebarShow && ( //is Show가 있어야 보여준다
                 <>
