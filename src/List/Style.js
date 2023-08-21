@@ -44,7 +44,7 @@ export const SCount = (isSelected) => css`
     width: 30px;
     height: 15px;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: ${isSelected ? "600" : "500"};
     background-color: ${isSelected ? "#fff" : "#eaeaea"};
     
     

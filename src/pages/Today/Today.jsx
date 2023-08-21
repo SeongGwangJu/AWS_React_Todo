@@ -3,16 +3,22 @@ import React from 'react';
 import { css } from "@emotion/react";
 import { HiCalendar } from 'react-icons/hi';
 import * as S from "./Style";
+import MainContainer from '../../components/MainContainer/MainContainer';
 import { useRecoilState } from 'recoil';
-import { isSidebarShowState } from '../../store/sidebarStore';
+import { isRightSubSidebarState } from '../../store/sidebarStore';
 
 
 function Today(props) {
-    const [ isSidebarShow, setIsSidebarShow ] = useRecoilState(isSidebarShowState);
+    const [ isRightSubSidebar, setIsRightSubSidebar ] = useRecoilState(isRightSubSidebarState);
+
+    const handleOpenClick = () => {
+        setIsRightSubSidebar(!isRightSubSidebar);
+    }
+    // const [ isSidebarShow, setIsSidebarShow ] = useRecoilState(isSidebarShowState);
     return (
-        <div css={S.SLayout}>
-            
-        </div>
+        <MainContainer>
+            <button onClick={handleOpenClick}>열기</button>
+        </MainContainer>
     );
 }
 
