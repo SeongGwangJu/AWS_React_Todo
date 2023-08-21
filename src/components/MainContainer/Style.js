@@ -2,11 +2,11 @@
 import { css } from "@emotion/react";
 
 export const SContainer = (isMainSidebarShow, isRightSidebarShow) => {
-    
+
     let width = 934;
 
     // 사이드바 유무에따라 메인컨테 폭이 조절됨
-    if(isMainSidebarShow) { 
+    if(isMainSidebarShow) {
         width -= 210;
     }
 

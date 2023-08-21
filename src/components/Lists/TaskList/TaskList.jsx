@@ -22,11 +22,15 @@ function TaskList( {target, setTarget} ) {
         }
     }
 
+    const handleCheckBoxClick = (e) => {
+        //버블링 방지 :이벤트가 퍼지는걸 막아줌
+        e.stopPropagation();
+    }
     return (
         <ul css={S.SLayout}>
             <li css={S.SListBox} onClick={handleOpenClick}>
                 <div css={S.SListContent}>
-                    <input css={S.SCheckBox}type="checkbox" />
+                    <input css={S.SCheckBox}type="checkbox" onClick={handleCheckBoxClick}/>
                     <span>Research content ideas</span>
                 </div>
                 <FaChevronRight />
